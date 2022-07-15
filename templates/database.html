@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/form.css"/>
+    <title>Database</title>
+</head>
+
+<body>
+    <table id="results">
+        <tr>
+            <th>EntryID</th>
+	    <th>Seq_ID</th>
+            <th>Length</th>
+            <th>Weight</th>
+            <th>Hydrophobicity</th>
+            <th>Instability Index</th>
+            <th>A Count</th>
+            <th>C Count</th>
+            <th>D Count</th>
+            <th>E Count</th>
+            <th>F Count</th>
+            <th>G Count</th>
+            <th>H Count</th>
+            <th>I Count</th>
+            <th>K Count</th>
+            <th>L Count</th>
+            <th>M Count</th>
+            <th>N Count</th>
+            <th>P Count</th>
+            <th>Q Count</th>
+            <th>R Count</th>
+            <th>S Count</th>
+            <th>T Count</th>
+            <th>V Count</th>
+            <th>W Count</th>
+            <th>Y Count</th>
+        </tr>
+	{% for row in result %}
+        <tr>
+            <td>{{ row['EntryID'] }}</td>
+            <td>{{ row['Seq_ID'] }}</td>
+            <td>{{ row['Length'] }}</td>
+            <td>{{ row['Weight'] }}</td>
+            <td>{{ row['Hydrophobicity'] }}</td>
+            <td>{{ row['Instability_index'] }}</td>
+            <td>{{ row['A'] }}</td>
+            <td>{{ row['C'] }}</td>
+            <td>{{ row['D'] }}</td>
+            <td>{{ row['E'] }}</td>
+            <td>{{ row['F'] }}</td>
+            <td>{{ row['G'] }}</td>
+            <td>{{ row['H'] }}</td>
+            <td>{{ row['I'] }}</td>
+            <td>{{ row['K'] }}</td>
+            <td>{{ row['L'] }}</td>
+            <td>{{ row['M'] }}</td>
+            <td>{{ row['N'] }}</td>
+            <td>{{ row['P'] }}</td>
+            <td>{{ row['Q'] }}</td>
+            <td>{{ row['R'] }}</td>
+            <td>{{ row['S'] }}</td>
+            <td>{{ row['T'] }}</td>
+            <td>{{ row['V'] }}</td>
+            <td>{{ row['W'] }}</td>
+            <td>{{ row['Y'] }}</td>
+        </tr>
+	{% endfor %}
+</body>
