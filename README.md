@@ -1,4 +1,4 @@
-# Final_Project
+# Amino acid analysis
 
 * ABOUT *
 
